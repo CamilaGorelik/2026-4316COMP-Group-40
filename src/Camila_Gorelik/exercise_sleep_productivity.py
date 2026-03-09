@@ -7,11 +7,11 @@ from preprocessing import preprocess_data
 
 df = preprocess_data()
 
-exercise_productivity = df.groupby("exercise_hours")["productivity_score"].mean()
+exercise_productivity = df.groupby('exercise_minutes')['productivity_score'].mean()
 
-sleep_productivity = df.groupby("sleep_hours")["productivity_score"].mean()
+sleep_productivity = df.groupby('sleep_hours')['productivity_score'].mean()
 
-print("Average productivity by exercise hours:")
+print("Average productivity by exercise minutes:")
 print(exercise_productivity)
 
 print("Average productivity by sleep hours:")

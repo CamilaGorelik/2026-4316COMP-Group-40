@@ -21,6 +21,3 @@ def study_hours_visualisation():
     plt.legend()
 
     plt.show()
-
-if __name__ == "__main__":
-    study_hours_visualisation()

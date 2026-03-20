@@ -1,5 +1,6 @@
 from exercise_sleep_productivity import exercise_sleep_analysis
 from study_hours_grade import study_hours_analysis
+from visualisation import study_hours_visualisation
 
 def main():
 
@@ -7,6 +8,7 @@ def main():
     print("1 - Exercise vs Sleep")
     print("2 - Study Hours")
     print("3 - Run All")
+    print("4 - Show Visualisation")
 
     choice = input("Enter your choice: ")
 
@@ -21,6 +23,9 @@ def main():
     elif choice == "3":
         exercise_sleep_analysis()
         study_hours_analysis()
+
+    elif choice == "4":
+        study_hours_visualisation()
 
     else:
         print("Invalid choice")

@@ -11,7 +11,7 @@ def analyse_gender (data):
     """
     return data.groupby("gender").mean(numeric_only=True)
 
-    def create_charts(stats):
+def create_charts(stats):
         """
         Creating a few charts for gender comparison
         """
@@ -20,7 +20,7 @@ def analyse_gender (data):
         chart1.title = "Average Final Grade by Gender"
 
         for gender, score in stats["final_grade"].items():
-            chart1.add(gender, hours)
+            chart1.add(gender, score)
 
         chart1.render_to_file("gender_final_grade.svg")
 
@@ -42,7 +42,7 @@ def analyse_gender (data):
 
         chart3.render_to_file("gender_focus.svg")
 
-    def main():
+def main():
         data = preprocess_data()
 
         stats = analyse_gender(data)
@@ -50,5 +50,5 @@ def analyse_gender (data):
 
         create_charts(stats)
 
-    if__name__ == "__main__" :
+if __name__ == "__main__" :
     main()

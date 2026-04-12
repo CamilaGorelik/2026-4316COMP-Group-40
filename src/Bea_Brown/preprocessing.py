@@ -17,11 +17,10 @@ def preprocess_data():
         'sleep_hours',
         'final_grade'
     ]
-
-"""
+    """
 Removing any empty values
 """
-
     df = df[columns]
 
     return df
+

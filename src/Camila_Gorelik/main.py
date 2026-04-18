@@ -1,6 +1,7 @@
 from exercise_sleep_productivity import exercise_sleep_analysis
 from study_hours_grade import study_hours_analysis
 from visualisation import study_hours_visualisation
+from visualisation import study_hours_scatter_visualisation
 
 def main():
     """
@@ -15,14 +16,15 @@ def main():
         print("1 - Exercise vs Sleep")
         print("2 - Study Hours")
         print("3 - Run All")
-        print("4 - Show Visualisation")
-        print("5 - Quit")
+        print("4 - Line Plot (Study Hours vs Final Grade)")
+        print("5 - Scatter Plot (Study Hours vs Productivity)")
+        print("6 - Quit")
 
     # Take user input to determine which function to execute
     choice = input("Enter your choice: ").strip().lower()
 
     # Exit condition
-    if choice == "5":
+    if choice == "6":
         print("Exiting program...")
         break
         
@@ -39,9 +41,13 @@ def main():
         exercise_sleep_analysis()
         study_hours_analysis()
 
-    # Option 4: Display visualisation for study hours analysis
+    # Option 4: Display visualisation for study hours vs final grade analysis
     elif choice == "4":
         study_hours_visualisation()
+
+    # Option 5: Display visualisation for study hours vs productivity analysis
+    elif choice == "5":
+        study_hours_scatter_visualisation()
 
     # Handle invalid input
     else:

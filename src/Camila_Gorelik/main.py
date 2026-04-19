@@ -20,38 +20,38 @@ def main():
         print("5 - Scatter Plot (Study Hours vs Productivity)")
         print("6 - Quit")
 
-    # Take user input to determine which function to execute
-    choice = input("Enter your choice: ").strip().lower()
+        # Take user input to determine which function to execute
+        choice = input("Enter your choice: ").strip().lower()
 
-    # Exit condition
-    if choice == "6":
-        print("Exiting program...")
-        break
+        # Exit condition
+        if choice == "6":
+            print("Exiting program...")
+            break
         
-    # Option 1: Run exercise vs sleep analysis
-    elif choice == "1":
-        exercise_sleep_analysis()
+        # Option 1: Run exercise vs sleep analysis
+        elif choice == "1":
+            exercise_sleep_analysis()
 
-    # Option 2: Run study hours vs grade/productivity analysis
-    elif choice == "2":
-        study_hours_analysis()
+        # Option 2: Run study hours vs grade/productivity analysis
+        elif choice == "2":
+            study_hours_analysis()
 
-    # Option 3: Run all analyses sequentially
-    elif choice == "3":
-        exercise_sleep_analysis()
-        study_hours_analysis()
+        # Option 3: Run all analyses sequentially
+        elif choice == "3":
+            exercise_sleep_analysis()
+            study_hours_analysis()
 
-    # Option 4: Display visualisation for study hours vs final grade analysis
-    elif choice == "4":
-        study_hours_visualisation()
+        # Option 4: Display visualisation for study hours vs final grade analysis
+        elif choice == "4":
+            study_hours_visualisation()
 
-    # Option 5: Display visualisation for study hours vs productivity analysis
-    elif choice == "5":
-        study_hours_scatter_visualisation()
+        # Option 5: Display visualisation for study hours vs productivity analysis
+        elif choice == "5":
+            study_hours_scatter_visualisation()
 
-    # Handle invalid input
-    else:
-        print("Invalid choice. Please enter 1-4 or '5' to quit.")
+        # Handle invalid input
+        else:
+            print("Invalid choice. Please enter 1-4 or '5' to quit.")
 
 # Ensures that the program runs only when this file is executed directly,
 # and not when it is imported as a module in another script

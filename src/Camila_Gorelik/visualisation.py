@@ -13,6 +13,8 @@ def study_hours_visualisation():
     # Load processed dataset
     df = preprocess_data()
 
+    df['study_hours_per_day'] = df['study_hours_per_day'].round()
+
     # Group data by study hours and calculate averages
     study_hours_final_grade = df.groupby('study_hours_per_day')['final_grade'].mean().sort_index()
     study_hours_productivity = df.groupby('study_hours_per_day')['productivity_score'].mean().sort_index()
@@ -24,7 +26,6 @@ def study_hours_visualisation():
     plt.plot(
         study_hours_final_grade.index,
         study_hours_final_grade.values,
-        marker='o',
         label='Final Grade'
     )
 
@@ -32,7 +33,6 @@ def study_hours_visualisation():
     plt.plot(
         study_hours_productivity.index,
         study_hours_productivity.values,
-        marker='s',
         label='Productivity'
     )
 
@@ -64,20 +64,32 @@ def study_hours_scatter_visualisation():
     plt.scatter(
         df['study_hours_per_day'],
         df['productivity_score'],
-        alpha=0.5
+        alpha=0.3,
+        zorder=1
     )
 
     # Calculate and plot line of best fit (trend line)
     z = np.polyfit(df['study_hours_per_day'], df['productivity_score'], 1)
     p = np.poly1d(z)
-    plt.plot(df['study_hours_per_day'], p(df['study_hours_per_day']))
+    x = np.sort(df['study_hours_per_day'])
+    y = p(x)
+    plt.plot(
+        x,
+        y,
+        linewidth=3,
+        color='red',
+        label='Trend Line',
+        zorder=3
+    )
 
     # Titles and labels
     plt.title("Study Hours vs Productivity (Scatter Plot with Trend Line)")
     plt.xlabel("Study Hours Per Day")
     plt.ylabel("Productivity Score")
 
+    plt.legend()
     plt.grid(True)
 
     # Display graph
-    plt.show()
+    plt.show(block=True)
+    plt.close

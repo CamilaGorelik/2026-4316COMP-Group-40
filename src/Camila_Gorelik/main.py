@@ -18,13 +18,13 @@ def main():
         print("3 - Run All")
         print("4 - Line Plot (Study Hours vs Final Grade)")
         print("5 - Scatter Plot (Study Hours vs Productivity)")
-        print("6 - Quit")
+        print("q - Quit")
 
         # Take user input to determine which function to execute
         choice = input("Enter your choice: ").strip().lower()
 
         # Exit condition
-        if choice == "6":
+        if choice == "q":
             print("Exiting program...")
             break
         
@@ -51,7 +51,7 @@ def main():
 
         # Handle invalid input
         else:
-            print("Invalid choice. Please enter 1-4 or '5' to quit.")
+            print("Invalid choice. Please enter 1-4 or 'q' to quit.")
 
 # Ensures that the program runs only when this file is executed directly,
 # and not when it is imported as a module in another script

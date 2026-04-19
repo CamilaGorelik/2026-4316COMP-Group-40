@@ -5,7 +5,7 @@ Does attendance affect performance, and if so, to what extent?
 
 import pandas as pd
 import pygal
-from preprocessing import preprocess_data
+from src.Bea_Brown.preprocessing import preprocess_data
 
 def analyse_attendance(data):
     """

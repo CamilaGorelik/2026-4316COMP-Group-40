@@ -3,7 +3,7 @@ Are there gender differences in productivity levels among students, and if so, w
 """
 
 import pygal
-from preprocessing import preprocess_data
+from src.Bea_Brown.preprocessing import preprocess_data
 
 def analyse_gender (data):
     """

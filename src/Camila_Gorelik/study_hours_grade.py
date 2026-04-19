@@ -2,7 +2,7 @@
 What is the relationship between study hours per day and final grade, and does productivity plateau after a certain number of study hours?
 """
 
-from preprocessing import preprocess_data
+from src.Camila_Gorelik.preprocessing import preprocess_data
 
 def study_hours_analysis():
     # Load the preprocessed dataset

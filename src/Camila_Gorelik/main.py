@@ -1,7 +1,7 @@
 from src.Camila_Gorelik.exercise_sleep_productivity import exercise_sleep_analysis
 from src.Camila_Gorelik.study_hours_grade import study_hours_analysis
-from visualisation import study_hours_visualisation
-from visualisation import study_hours_scatter_visualisation
+from src.Camila_Gorelik.visualisation import study_hours_visualisation
+from src.Camila_Gorelik.visualisation import study_hours_scatter_visualisation
 
 def main():
     """

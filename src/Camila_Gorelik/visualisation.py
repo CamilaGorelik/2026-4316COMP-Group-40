@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from preprocessing import preprocess_data
+from src.Camila_Gorelik.preprocessing import preprocess_data
 
 def study_hours_visualisation():
     """

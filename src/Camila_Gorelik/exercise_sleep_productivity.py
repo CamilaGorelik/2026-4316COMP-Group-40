@@ -3,7 +3,7 @@ Is sleep duration or exercise time more strongly correlated with student product
 
 """
 
-from preprocessing import preprocess_data
+from src.Camila_Gorelik.preprocessing import preprocess_data
 
 def exercise_sleep_analysis():
     # Load the preprocessed dataset

@@ -43,9 +43,9 @@ The application allows users to run different analyses and visualisations throug
    - python3 -m venv venv
 
 3. Activate the virtual environment:
-   On Mac/Linux:
+   - On Mac/Linux:
    - source venv/bin/activate
-   On Windows:
+   - On Windows:
    - venv/Scripts/activate
 
 4. Install required packages

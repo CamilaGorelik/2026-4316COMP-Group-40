@@ -60,12 +60,12 @@ The application allows users to run different analyses and visualisations throug
 // Menu Options for Camila's analysis:
 
 Once running, you will see:
-1 - Exercise vs Sleep
-2 - Study Hours
-3 - Run All
-4 - Line Plot (Study Hours vs Final Grade)
-5 - Scatter Plot (Study Hours vs Productivity)
-q - Quit
+- 1 - Exercise vs Sleep
+- 2 - Study Hours
+- 3 - Run All
+- 4 - Line Plot (Study Hours vs Final Grade)
+- 5 - Scatter Plot (Study Hours vs Productivity)
+- q - Quit
 
 Enter a number to run the corresponding analysis for visualisation.
 
@@ -73,11 +73,11 @@ Enter a number to run the corresponding analysis for visualisation.
 
 // Visualisations
 
-Line Graph
+- Line Graph
 - Shows average final grade and productivity across study hours
 - Uses grouped and averaged data for clarity
 
-Scatter Plot with Trend Line
+- Scatter Plot with Trend Line
 - Displays raw data distribution
 - Includes a line of best fit using NumPy
 - Highlights correlation between study hours and productivity
@@ -86,11 +86,11 @@ Scatter Plot with Trend Line
 
 // Dataset
 
-The dataset is included in the project:
+- The dataset is included in the project:
 
-data/student_productivity_distribution_dataset_20000.csv
+- data/student_productivity_distribution_dataset_20000.csv
 
-No additional configuration is required.
+- No additional configuration is required.
 
 ---
 

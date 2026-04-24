@@ -36,24 +36,24 @@ The application allows users to run different analyses and visualisations throug
 // Setup Instructions
 
 1. Clone the repository
-   git clone <https://github.com/CamilaGorelik/2026-4316COMP-Group-40>
-   cd 2026-4316COMP-Group-40
+   - git clone <https://github.com/CamilaGorelik/2026-4316COMP-Group-40>
+   - cd 2026-4316COMP-Group-40
 
 2. Create a virtual environment
-   python3 -m venv venv
+   - python3 -m venv venv
 
 3. Activate the virtual environment:
    On Mac/Linux:
-   source venv/bin/activate
+   - source venv/bin/activate
    On Windows:
-   venv/Scripts/activate
+   - venv/Scripts/activate
 
 4. Install required packages
-   pip install pandas matplotlib numpy pygal
+   - pip install pandas matplotlib numpy pygal
 
 5. Running the program
    Run the application from the project root:
-   python -m src.Camila_Gorelik.main
+   - python -m src.Camila_Gorelik.main
 
 ---
 
